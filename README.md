@@ -14,10 +14,10 @@ The containter is up and running on port 5000.
 Use the CURL command to send an image as a POST request to the Flask App running on localhost. 
 The result is a JPEG image. 
 
-- **For Cracks** : 
+- **For Cracks (U-Net CNN)** : 
 
 curl -k -X POST -F 'image=@image_path/ -v http://0.0.0.0:5000/segment > crack_result.jpeg 
-- **For Potholes** : 
+- **For Potholes (R-CNN)** : 
 
 curl -k -X POST -F 'image=@image_path/ -v http://0.0.0.0:5000/detect/rcnn > pothole_result.jpeg
 
